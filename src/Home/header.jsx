@@ -87,6 +87,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
+      {/* Mobile Menu */}
       <div
         className={`md:hidden bg-white fixed w-full top-0 bottom-0 overflow-y-auto py-20 px-6 duration-500 ${
           open ? "left-0" : "left-[-100%]"
@@ -95,20 +96,14 @@ function Navbar() {
         <ul className="text-sm">
           <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-3 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
           <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/about-us" onClick={() => setOpen(false)}>About Us</Link></li>
+          <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/online-payments" onClick={() => setOpen(false)}>Online Payments</Link></li>
           <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/payroll" onClick={() => setOpen(false)}>Crypto Payroll</Link></li>
-          <li>
-            <details>
-              <summary className="cursor-pointer justify-between tracking-wider hover:bg-[#859bbd] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm">
-                Accept Crypto
-              <span className="text-xs">▼</span>
-              </summary>
-              <ul className="">
-                <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/online-payments">Online Payments</Link></li>
-                <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/billing">Billing</Link></li>
-                <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/retail">Retail</Link></li>
-              </ul>
-            </details>
-          </li>
+          <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/billing" onClick={() => setOpen(false)}>Billing</Link></li>
+          <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/retail" onClick={() => setOpen(false)}>Retail</Link></li>
+          <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/online-consulting" onClick={() => setOpen(false)}>Online Consulting</Link></li>
+          <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/billing" onClick={() => setOpen(false)}>Liquidity Management</Link></li>
+          <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/retail" onClick={() => setOpen(false)}>Security Risk</Link></li>
+          <li className='tracking-wider hover:bg-[#1a1e24] px-8 py-2 flex flex-row items-center border-b hover:text-[#1A2B6B] hover:font-semibold duration-500 hover:text-base hover:border-b-2 border-[#1A2B6B] font-bold text-[#000] border-opacity-10 text-sm'><Link to="/online-consulting" onClick={() => setOpen(false)}>Asset Protection</Link></li>
             <p className='text-sm px-8 text-[#4b4b4b] pt-8'>
               Blocksphere offers to onvert your cryptocurrency into cash, having a trusted partner is essential to ensure a smooth, secure, and efficient process.
             </p>
@@ -277,4 +272,5 @@ export default Navbar;
 
 
 // export default Navbar;
+
 
