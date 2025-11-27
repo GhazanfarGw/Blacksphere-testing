@@ -9,15 +9,15 @@ function Dashboard() {
 
   return (
     <>
-        <div className='liquidity duration-500 overflow-hidden mx-auto items-center border-b border-opacity-30 md:min-h-screen'>
+        <div className='client duration-500 overflow-hidden mx-auto items-center border-b border-opacity-30 md:min-h-[720px] bg-black'>
             <div className='mx-auto max-w-screen-2xl w-full md:px-10 px-5'>
                 <div className='py-32'>
                     <div className='md:top-1/4 md:px-10 px-5 md:absolute pt-5 md:pt-0 max-w-screen-xl mx-auto'>
                         <div className='second text-left'>
-                            <p className="text-yellow-100">
+                            <p className="text-black">
                                 Blocksphere Customer Support
                             </p>
-                            <h1 data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="400" className='xl:text-6xl lg:text-5xl text-3xl md:text-5xl items-center duration-300 text-[#ffffff] font-medium'>
+                            <h1 data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="400" className='xl:text-6xl lg:text-5xl text-3xl md:text-5xl items-center duration-300 text-[#000] font-medium'>
                               Client Experience <br className='hidden md:block lg:block'/>
                             </h1>
                         </div>
